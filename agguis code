@@ -1,0 +1,20 @@
+chores = ["brush teeth", "exercise", "shave", "shower", "eat"]
+def menu():
+    print("[1] Option 1")
+    print("[2] Option 2")
+    print("[3] Option 3")
+
+menu()
+option = int(input(" Enter your option:"))
+
+
+
+
+while menu != 0:
+    if option == 1:
+        break
+print("add task")
+    if option ==3:
+        break
+print(chores)
+   
