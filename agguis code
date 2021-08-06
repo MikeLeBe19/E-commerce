@@ -1,20 +1,35 @@
 chores = ["brush teeth", "exercise", "shave", "shower", "eat"]
+task={
+    'title': ['brush teeth', 'exercise', 'shave', 'shower', 'eat'],
+    'priority' : ['high', 'medium', 'low'], 
+}
+toDo = []
+
 def menu():
-    print("[1] Option 1")
-    print("[2] Option 2")
-    print("[3] Option 3")
+    print("[1] Option 1 Add Task")
+    print("[2] Option 2 Remove Task")
+    print("[3] Option 3 View Tasks")
+    print("[q] Option 4 Quit")
 
 menu()
-option = int(input(" Enter your option:"))
+option = int(input(" Enter your option: "))
 
-
-
-
-while menu != 0:
+while option != 'q':
     if option == 1:
+        title = input("Enter your task: ")
+        priority = input("Enter the priority of the task: ")
+        toDo.append([title, priority])
+        
+    if option == 2:
+        title = input("Enter your task: ")
+        priority = input("Enter the priority of the task: ")
+        toDo.remove([title, priority])
+        
+    if option == 3:
+        print(toDo)
+    if option == 'q':
         break
-print("add task")
-    if option ==3:
-        break
-print(chores)
-   
+    menu()
+    option = int(input(" Enter your option: "))
+
+print(toDo)
