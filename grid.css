@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color:#CBD0F6;
+    gap: 20px
+    
+}
+/* .box10, .box11 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+} */
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: #082D4B;
+        gap: 20px;
+    }
+ 
+  }
+    
+
+
+
